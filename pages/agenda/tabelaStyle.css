@@ -1,0 +1,104 @@
+
+.logo {
+    max-height: 90% !important;
+    margin: auto 0;
+    padding: 0 !important;
+    position:relative;
+    left: 445px;
+
+}
+
+.title {
+    font-size: 72px;
+    color: #9DBEBB;
+    position:relative;
+    left: 5px;
+}
+
+h1 {
+    text-align: center;
+    letter-spacing: -2px;
+    font-size: 2.5em;
+    margin: 20px 0;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 20px;
+    font-weight:500;
+
+}
+
+.blue {
+    border: 1px solid #031926;
+    width: 1200px;
+    position:relative;
+    left:60px;
+    top:60px;
+}
+
+.blue thead {
+    background: #031926;
+}
+
+th, td {
+    text-align: center;
+    padding: 5px 0;
+    border: 1px solid #031926;
+    
+}
+
+thead {
+    font-size: 2rem;
+    font-weight: lighter;
+    background-color:#031926;
+    color: #FFFFFF;
+}
+
+
+tbody tr:nth-child(even) {
+    background: #9DBEBB;
+}
+
+tbody tr:nth-child(odd) {
+    background: #ffffffe0;
+}
+
+tbody tr:nth-child(even) {
+    background: #ffffffe0;
+}
+
+tbody tr:hover {
+    background: #468189;
+    color: #FFFFFF;
+}
+
+
+body {
+    background-color: #9DBEBB;
+    font-family: Roboto, sans-serif;
+}
+
+.back {
+    position: relative;
+    left: -1180px;
+}
+
+.cabeçalho h2{
+    position: relative;
+    display:flexbox;
+    left: 455px;
+    color:#031926;
+    font-size: 27px;
+    top:40px;
+ 
+}
+
+
+

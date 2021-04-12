@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt">
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>VaccApp</title>
+	<link rel="shortcut icon" type="image/jpg" href="../../icons/logo.png"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap">
+	<link rel="stylesheet" href="tabelaStyle.css">
+</head>
+
+<body>
+<div id="app">
+	<header>
+		<div class="header-item">
+			<a href="../agenda/index.html">
+				<img class="logo" alt="logo" src="../../icons/logo.svg"/>
+			</a>
+			<span class="title">VaccApp</span>
+		</div>
+
+		<div class="header-item header-item--even">
+			<img class="settings" alt="settings" src="../../icons/settings.svg"/>
+			<img class="logout" alt="logout" src="../../icons/logout.svg"/>
+		</div>
+
+	</header>
+	<div class="cabeçalho">
+		<h2 style="width: 150%"> Segunda-feira, 12 Abril 2021</h2>
+		<div class="back">
+			<input id="choose-municipio" class="back-button" alt="back" type="image" src="../../icons/back.svg"
+			       onclick="backAgenda()"/>
+		</div>
+	</div>
+	<table class="blue">
+		<thead>
+		<tr>
+			<th>Horário</th>
+			<th>Nome</th>
+			<th>Número SNS</th>
+			<th>Dose</th>
+		</tr>
+		</thead>
+		<tbody>
+		<tr>
+			<td>9:00</td>
+			<td>Anna Hickmann</td>
+			<td>123456789</td>
+			<td>1ª</td>
+		</tr>
+		<tr>
+			<td>9:15</td>
+			<td>José Antunes</td>
+			<td>414959596</td>
+			<td>1ª</td>
+		</tr>
+
+		<tr>
+			<td>10:15</td>
+			<td>Rebeldino Baião de Souza</td>
+			<td>394959596</td>
+			<td>2ª</td>
+		</tr>
+		<tr>
+			<td>11:15</td>
+			<td>Yasmin de Jesus</td>
+			<td>495959596</td>
+			<td>2ª</td>
+		</tr>
+	
+		<tr>
+			<td>14:15</td>
+			<td>Josefina Amaral Cardoso</td>
+			<td>394959596</td>
+			<td>1ª</td>
+		</tr>
+		<tr>
+			<td>14:25</td>
+			<td>Carolina Brito Cardosodo</td>
+			<td>354959596</td>
+			<td>2ª</td>
+		</tr>
+		<tr>
+			<td>15:05</td>
+			<td>Rafael Ferretti</td>
+			<td>278959596</td>
+			<td>1ª</td>
+		</tr>
+
+		<tr>
+			<td>16:15</td>
+			<td>Marília Mendonça Antunes</td>
+			<td>879959597</td>
+			<td>2ª</td>
+		</tr>
+		<tr>
+			<td>16:45</td>
+			<td>Daniela Cicarelli</td>
+			<td>193959597</td>
+			<td>1ª</td>
+		</tr>
+
+
+		</tbody>
+	</table>
+	<!-- The Modal Logout-->
+	<div id="ModalLogout" class="modal-logout">
+		<!-- Modal content -->
+		<div class="modal-content-logout">
+			<div class="modal-logout-content2">
+				<p> Tem a certeza que deseja terminar sessão?</p>
+				<button id="confirmarModal" class="confirmar" onclick="logout()">Sim</button>
+				<button id="cancelarModal" class="cancelar" onclick="closeModalLogout()">Não</button>
+			</div>
+		</div>
+	</div>
+	<!-- The Modal Settings-->
+	<div id="ModalSettings" class="modal-settings">
+		<!-- Modal content -->
+		<div class="modal-content-settings">
+			<div class="modal-settings-content2">
+				<div style="display: flex; justify-content: space-between; font-size: 24px;
+padding-bottom: 40px;">
+					<h3 style="margin-top: 4px;">Definições</h3>
+					<span class="closeSettings" >&times;</span>
+				</div>
+				<div style="display: flex; padding-bottom: 12px">
+					<p>Ativar notificações</p>
+					<input type="checkbox" style="margin-top: 27px">
+				</div>
+				<div>
+
+					<button class="guardarModal">Guardar</button>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+<script src="top-bar.js"></script>
+</body>
+</html>
+</html>

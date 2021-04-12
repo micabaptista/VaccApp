@@ -1,0 +1,579 @@
+/* NORMALIZE */
+/* colors: https://coolors.co/031926-468189-77aca2-9dbebb-f4e9cd*/
+h1, h2 {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.active a {
+    color: #031926;
+    font-size: 32px;
+    text-decoration: none;
+    bottom: 20px;
+}
+
+.active {
+    background-color: #f4e9cd;
+}
+
+.nav-option:hover:not(.active) {
+    background-color: #f4e9cd;
+    opacity: 40%;
+}
+
+.nav-option a {
+    color: #031926;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.nav-option {
+    text-align: center;
+    margin: 0;
+    padding: 10px 20px;
+}
+
+
+nav > ul > li > div {
+    display: inline-flex;
+    padding-bottom: 2px;
+    padding-top: 0;
+}
+
+main {
+    background-color: #9DBEBB;
+    width: 100%;
+}
+
+header {
+    background-color: #031926;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 100%;
+    height: 80px;
+    padding: 10px;
+}
+
+.header-item * {
+    max-height: 100%;
+}
+
+.header-item {
+    display: flex;
+    width: 50%;
+
+}
+
+.header-item--even {
+    justify-content: flex-end;
+}
+
+.header-item img {
+    max-height: 48px;
+    margin: auto 0;
+    padding: 0 5px;
+    cursor: pointer;
+}
+
+.logo {
+    max-height: 90% !important;
+    margin: auto 0;
+    padding: 0 !important;
+
+}
+
+.title {
+    font-size: 72px;
+    color: #9DBEBB;
+}
+
+.main-content {
+    display: flex;
+    width: 100%;
+    height: calc(100vh - 90px);
+}
+
+nav ul li {
+    list-style-type: none;
+}
+
+nav {
+    background-color: #468189;
+}
+
+
+/* TYPOGRAPHY */
+
+body {
+    font-family: Roboto, sans-serif;
+    font-size: 1.3em;
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+.content-wrapper {
+    padding-left: 5%;
+}
+
+#botoes {
+    padding-top: 7%;
+    padding-left: 0;
+}
+
+#Confirmar a {
+    text-decoration: none;
+}
+
+#confirmar a:link {
+    text-decoration: none;
+    color: black;
+
+}
+
+#confirmar a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+#confirmar a:active {
+    text-decoration: none;
+    color: green;
+}
+
+#confirmar a:hover {
+    color: green;
+}
+
+#cancelar a:link {
+    text-decoration: none;
+    color: black;
+
+}
+
+#cancelar a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+#cancelar a:hover {
+    text-decoration: none;
+    color: red;
+}
+
+#cancelaar a:active {
+    text-decoration: none;
+    color: red;
+}
+
+#name {
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+#inputClientNumber {
+    box-sizing: border-box;
+    background-position: 18px 11px;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    padding: 14px 20px 12px 45px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    border-radius: 3px;
+    width: 40%;
+    max-height: 12%;
+    margin-left: 25%;
+
+}
+
+#search {
+    box-sizing: border-box;
+    background-position: 12px 10px;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    padding: 28px 24px 17px 22px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    background-image: url(../../icons/search.svg);
+    background-size: 50%;
+    border-radius: 3px;
+    margin-right: 0;
+    cursor: pointer;
+}
+
+
+.input {
+    margin-top: 4%;
+    box-sizing: border-box;
+    background-position: 18px 11px;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    padding: 14px 20px 12px 20px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    background-size: 4%;
+    border-radius: 3px;
+    background-color: #031926;
+    color: white;
+}
+
+#tipoVacina {
+    box-sizing: border-box;
+    background-position: 18px 11px;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    padding: 14px 20px 12px 20px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    background-size: 4%;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#date {
+    box-sizing: border-box;
+    background-position: 18px 11px;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    padding: 14px 20px 12px 20px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    background-size: 4%;
+    border-radius: 3px;
+    cursor: text;
+}
+
+input::-webkit-calendar-picker-indicator:hover {
+    cursor: pointer;
+}
+
+#Cancelar {
+    box-sizing: border-box;
+    background-position: 18px 11px;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    padding: 14px 20px 12px 20px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    background-size: 4%;
+    border-radius: 3px;
+    cursor: pointer;
+
+}
+
+#Confirmar {
+    box-sizing: border-box;
+    background-position: 18px 11px;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    padding: 14px 20px 12px 20px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    background-size: 4%;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin-top: 4%;
+
+    padding: 20px;
+    border: 1px solid #888;
+    width: 90%; /* Could be more or less, depending on screen size */
+}
+
+.modal-content3 {
+
+    display: flex;
+
+}
+
+/* The Close Button */
+.close {
+    justify-content: flex-end;
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.confirmar {
+    color: #3e8e41;
+}
+
+.cancelar {
+    color: darkred;
+}
+
+.message {
+    display: none;
+    color: #24bc27;
+    border-radius: 3px;
+    background-color: whitesmoke;
+    padding-left: 1%;
+    margin-top: 1%;
+    /* width: 22%; */
+    max-width: 22%;
+    font-size: 14px;
+}
+
+
+/** MODAL LOGOUT */
+#confirmarModal {
+    box-sizing: border-box;
+    background-position: 18px 11px;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    padding: 14px 20px 12px 20px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    background-size: 4%;
+    border-radius: 3px;
+    margin-left: 30%;
+    color: black !important;
+}
+
+#confirmarModal:hover {
+    color: green !important;
+}
+
+#cancelarModal {
+    box-sizing: border-box;
+    background-position: 18px 11px;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    padding: 14px 20px 12px 20px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    background-size: 4%;
+    border-radius: 3px;
+    margin-left: 2%;
+    color: black !important;
+
+
+}
+
+#cancelarModal:hover {
+    color: red !important;
+}
+
+/* Modal Content/Box */
+.modal-content-logout {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 35%; /* Could be more or less, depending on screen size */
+    max-width: 40%;
+    max-height: 18%;
+}
+
+/* The Modal (background) */
+.modal-logout {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+.modal-logout-content2 {
+    display: table;
+    margin: 0 auto;
+}
+
+/** END MODAL LOGOUT */
+
+.photoUtente {
+
+    margin-right: 30px;
+    max-height: 150px;
+    transform: translateY(15%);
+    border: 2px solid #031926;
+}
+
+#marcarVacina {
+    margin-top: 15px;
+    width: 154px;
+}
+
+.contactos {
+    margin-left: 5%;
+    margin-bottom: 5px;
+}
+
+#information {
+    visibility: hidden;
+}
+
+.modal-content3 p {
+    font-size: 20px !important;
+}
+
+#vacinaTomada {
+    visibility: hidden;
+    background-color: darkred;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-bottom: 10%;
+    position: absolute;
+}
+
+#InvalidSNS {
+    display: none;
+    color: darkred;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-top: 5%;
+    margin-left: 25%;
+    list-style-type: none;
+}
+
+.InvalidDate{
+    visibility: hidden;
+    color: darkred;
+    font-size: 16px;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Tooltip container */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted #031926; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+    font-size: 10px;
+    visibility: hidden;
+    width: 140px;
+    background-color: #031926;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+
+#information p {
+    font-size: 18px !important;
+}
+
+/** MODAL Settings */
+
+/* Modal Content/Box */
+.modal-content-settings {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px 20px 130px 20px;
+    border: 1px solid #888;
+    width: 35%; /* Could be more or less, depending on screen size */
+    max-width: 40%;
+    max-height: 20%;
+}
+
+/* The Modal (background) */
+.modal-settings {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-logout-settings2{
+    display: table;
+    margin: 0 auto;
+}
+input[type=checkbox]
+{
+    /* Double-sized Checkboxes */
+    -ms-transform: scale(2); /* IE */
+    -moz-transform: scale(2); /* FF */
+    -webkit-transform: scale(2); /* Safari and Chrome */
+    -o-transform: scale(2); /* Opera */
+    transform: scale(2);
+    padding: 10px;
+    margin-top: 13%;
+    margin-left: 3%;
+}
+
+/* Might want to wrap a span around your checkbox text */
+.checkboxtext
+{
+    /* Checkbox text */
+    font-size: 110%;
+    display: inline;
+}
+.guardarModal{
+    box-sizing: border-box;
+    background-position: 18px 11px;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    padding: 14px 20px 12px 20px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    background-size: 4%;
+    border-radius: 3px;
+}
+
+.closeSettings{
+    cursor: pointer;
+}
+
+
+/** END settings  */

@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en-US" xmlns="http://www.w3.org/1999/html">
+
+<head>
+	<meta charset="UTF-8">
+	<title>VaccApp</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap">
+	<link rel="shortcut icon" type="image/jpg" href="../../icons/logo.png"/>
+</head>
+<body>
+<div id="app">
+	<header>
+		<div class="header-item">
+			<img class="logo" alt="logo" src="../../icons/logo.svg" onclick="backAgenda()"/>
+			<span class="title">VaccApp</span>
+		</div>
+
+		<div class="header-item header-item--even">
+			<img class="settings" alt="settings" src="../../icons/settings.svg"/>
+			<img class="logout" alt="logout" src="../../icons/logout.svg"/>
+		</div>
+
+	</header>
+
+	<div class="main-content">
+		<nav>
+			<ul>
+				<!-- Alterar o active consoante a pagina -->
+				<li class="nav-option"><a href="../agenda/index.html">Agenda</a></li>
+				<li class="nav-option"><a href="../consultar/index.html">Consultar Município</a></li>
+				<li class="nav-option"><a href="../registar/index.html">Marcar Consulta</a></li>
+				<li class="nav-option active"><a href="../encomendar/index.html">Encomendar Vacinas</a></li>
+			</ul>
+		</nav>
+		<main>
+			<div class="content-wrapper">
+				<div class="titulo-encomenda">
+					<h1>Encomendar Vacinas</h1>
+					<a>O que deseja encomendar?</a>
+				</div>
+				<div>
+					<a class="produto-titulo">Produtos</a>
+					<div class="box">
+						<div id="produto1" class="produto">
+							<label style="margin-right: 50%"> Pfizer</label>
+							<label> Qt.</label>
+							<input id="input-Produto-1" type="number" min="0">
+						</div>
+						<div id="produto2" class="produto">
+							<label style="margin-right: 41.5%"> AstraZeneca</label>
+							<label> Qt.</label>
+							<input id="input-Produto-2" type="number" min="0">
+						</div>
+						<div id="produto3" class="produto">
+							<label style="margin-right: 46.5%"> Moderna</label>
+							<label> Qt.</label>
+							<input id="input-Produto-3" type="number" min="0">
+						</div>
+					</div>
+				</div>
+				<a class="dados-invalidos">	&#9888 Ups, ocorreu um erro, indique as quantidades de vacinas desejadas</a>
+				<div class="button-encomendar">
+					<button id="myBtn" class="button-encomendar1">Encomendar</button>
+					<a class="message"> ✅Encomenda pedida com sucesso</a>
+				</div>
+				<!-- The Modal -->
+				<div id="myModal" class="modal">
+
+					<!-- Modal content -->
+					<div class="modal-content">
+						<span class="close">&times;</span>
+						<h4>Confirmar encomenda:</h4>
+						<p>nºvac Pfizer</p>
+						<p>nºvac AstraZeneca</p>
+						<p>nºvac Moderna</p>
+						<button class="confirmarModal" onclick="closeModal(); encomendar()">Confirmar</button>
+						<button class="cancelarModal" onclick="closeModal()">Cancelar</button>
+					</div>
+				</div>
+				<!-- The Modal Logout-->
+				<div id="ModalLogout" class="modal-logout">
+					<!-- Modal content -->
+					<div class="modal-content-logout">
+						<div class="modal-logout-content2">
+							<p> Tem a certeza que deseja terminar sessão?</p>
+							<button  class="confirmar confirmarModal" onclick="logout()">Sim</button>
+							<button  class="cancelar cancelarModal" onclick="closeModalLogout()">Não</button>
+						</div>
+					</div>
+				</div>
+				<!-- The Modal Settings-->
+				<div id="ModalSettings" class="modal-settings">
+					<!-- Modal content -->
+					<div class="modal-content-settings">
+						<div class="modal-settings-content2">
+							<div style="display: flex; justify-content: space-between">
+								<h3 style="margin-top: 4px ;">Definições</h3>
+								<span class="closeSettings" >&times;</span>
+							</div>
+							<div style="display: flex">
+								<p>Ativar notificações</p>
+								<input type="checkbox" style="margin-top: 27px">
+							</div>
+							<div>
+
+								<button class="guardarModal">Guardar</button>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+	</div>
+
+	<footer>
+
+	</footer>
+</div>
+
+<script src="encomendar.js"></script>
+
+</body>
+
+</html>

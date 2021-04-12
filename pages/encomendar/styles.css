@@ -1,0 +1,490 @@
+/* NORMALIZE */
+/* colors: https://coolors.co/031926-468189-77aca2-9dbebb-f4e9cd*/
+h1, h2 {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.active a {
+    color: #031926;
+    font-size: 32px;
+    text-decoration: none;
+    bottom: 20px;
+}
+
+.active {
+    background-color: #f4e9cd;
+}
+
+.nav-option:hover:not(.active) {
+    background-color: #f4e9cd;
+    opacity: 40%;
+}
+
+.nav-option a {
+    color: #031926;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.nav-option {
+    text-align: center;
+    margin: 0;
+    padding: 10px 20px;
+}
+
+
+nav > ul > li > div {
+    display: inline-flex;
+    padding-bottom: 2px;
+    padding-top: 0;
+}
+
+main {
+    background-color: #9DBEBB;
+    width: 100%;
+}
+
+header {
+    background-color: #031926;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 100%;
+    height: 80px;
+    padding: 10px;
+}
+
+.header-item * {
+    max-height: 100%;
+}
+
+.header-item {
+    display: flex;
+    width: 50%;
+
+}
+
+.header-item--even {
+    justify-content: flex-end;
+}
+
+.header-item img {
+    max-height: 48px;
+    margin: auto 0;
+    padding: 0 5px;
+    cursor: pointer;
+}
+
+.logo {
+    max-height: 90% !important;
+    margin: auto 0;
+    padding: 0 !important;
+
+}
+
+.title {
+    font-size: 72px;
+    color: #9DBEBB;
+}
+
+.main-content {
+    display: flex;
+    width: 100%;
+    height: calc(100vh - 90px);
+}
+
+nav {
+    background-color: #468189;
+}
+
+nav ul li {
+    list-style-type: none;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    font-size: 1.3em;
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+#subtitulo {
+    font-size: 1.3em;
+    font-weight: 300;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+.content-wrapper {
+    padding-left: 20px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+/* Style the list */
+ul.breadcrumb {
+    margin-top: 3%;
+    margin-bottom: 3%;
+    margin-left: 4%;
+    list-style: none;
+    font-weight: bold;
+    background-color: #f4e9cd;
+    width: max-content;
+    padding: 0.5vh;
+
+}
+
+ul.breadcrumb li {
+    display: inline;
+}
+
+ul.breadcrumb li a {
+    color: #031926;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    max-width: 10%;
+}
+
+.distrito-vacinas > input {
+    cursor: not-allowed;
+}
+
+.municipio-vacinas > input {
+    cursor: not-allowed;
+
+}
+
+.quantidade-vacinas-txt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.quantidade-vacinas {
+    display: flex;
+    flex-direction: row;
+    padding-left: 900px;
+}
+
+.titulo-encomenda {
+    padding-left: 3%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.produto-titulo {
+    padding-left: 3%;
+    margin-bottom: 3%;
+}
+
+.produto {
+    padding-left: 3%;
+    margin-top: 3%;
+
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+
+    opacity: 1;
+
+}
+
+.box {
+    border: 1px solid #031926;
+    padding-bottom: 3%;
+    margin-left: 3%;
+    margin-top: 3%;
+    border-radius: 4px;
+    width: 70%;
+}
+
+.button-encomendar {
+    margin-left: 3%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.button-encomendar1 {
+    margin-top: 10px;
+    box-sizing: border-box;
+    background-position: 18px 11px;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    padding: 14px 20px 12px 20px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    background-size: 4%;
+    border-radius: 3px;
+    max-width: 25vh;
+
+}
+
+.message {
+    display: none;
+    color: #24bc27;
+    border-radius: 3px;
+    background-color: whitesmoke;
+    padding-left: 1%;
+    max-width: 22%;
+    font-size: 14px;
+    height: 50%;
+    margin-top: 1%;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%; /* Could be more or less, depending on screen size */
+    max-width: 40%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/** MODAL LOGOUT */
+.confirmarModal {
+    box-sizing: border-box;
+    background-position: 18px 11px;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    padding: 14px 20px 12px 20px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    background-size: 4%;
+    border-radius: 3px;
+    margin-left: 30%;
+}
+
+.confirmarModal:hover {
+    color: green;
+}
+
+.cancelarModal {
+    box-sizing: border-box;
+    background-position: 18px 11px;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    padding: 14px 20px 12px 20px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    background-size: 4%;
+    border-radius: 3px;
+    margin-left: 2%;
+
+}
+
+.cancelarModal:hover {
+    color: red;
+}
+
+/* Modal Content/Box */
+.modal-content-logout {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 35%; /* Could be more or less, depending on screen size */
+    max-width: 40%;
+    max-height: 18%;
+}
+
+/* The Modal (background) */
+.modal-logout {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+.modal-logout-content2 {
+    display: table;
+    margin: 0 auto;
+}
+
+/** END MODAL LOGOUT */
+
+.dados-invalidos {
+    visibility: hidden;
+    padding-left: 3%;
+    color: darkred;
+    font-size: 14px;
+}
+
+/** MODAL Settings */
+
+
+
+
+/* Modal Content/Box */
+.modal-content-settings {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px 20px 130px 20px;
+    border: 1px solid #888;
+    width: 35%; /* Could be more or less, depending on screen size */
+    max-width: 40%;
+    max-height: 20%;
+}
+
+/* The Modal (background) */
+.modal-settings {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-logout-settings2{
+    display: table;
+    margin: 0 auto;
+}
+input[type=checkbox]
+{
+    /* Double-sized Checkboxes */
+    -ms-transform: scale(2); /* IE */
+    -moz-transform: scale(2); /* FF */
+    -webkit-transform: scale(2); /* Safari and Chrome */
+    -o-transform: scale(2); /* Opera */
+    transform: scale(2);
+    padding: 10px;
+    margin-top: 13%;
+    margin-left: 3%;
+}
+
+/* Might want to wrap a span around your checkbox text */
+.checkboxtext
+{
+    /* Checkbox text */
+    font-size: 110%;
+    display: inline;
+}
+.guardarModal{
+    box-sizing: border-box;
+    background-position: 18px 11px;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    padding: 14px 20px 12px 20px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    background-size: 4%;
+    border-radius: 3px;
+}
+
+.closeSettings{
+    cursor: pointer;
+}
+
+
+/** END settings  */

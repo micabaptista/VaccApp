@@ -1,0 +1,107 @@
+<html lang="en-US" xmlns="http://www.w3.org/1999/html">
+
+<head>
+	<meta charset="UTF-8">
+	<title>VaccApp</title>
+	<link rel="shortcut icon" type="image/jpg" href="../../icons/logo.png"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap">
+	<script src="../../js/top-bar.js"></script>
+</head>
+<body>
+<div id="app">
+	<header>
+		<div class="header-item">
+			<img class="logo" alt="logo" src="../../icons/logo.svg"/>
+			<span class="title">VaccApp</span>
+		</div>
+
+		<div class="header-item header-item--even">
+			<img class="settings" alt="settings" src="../../icons/settings.svg"/>
+			<img class="logout" alt="logout" src="../../icons/logout.svg"/>
+		</div>
+
+	</header>
+
+	<div class="main-content">
+		<nav>
+			<ul>
+				<!-- Alterar o active consoante a pagina -->
+				<li class="nav-option"><a href="../agenda/index.html">Agenda</a></li>
+				<li class="nav-option"><a href="../consultar/index.html">Consultar Município</a></li>
+				<li class="nav-option active"><a href="../registar/index.html">Marcar Consulta</a></li>
+				<li class="nav-option"><a href="../encomendar/index.html">Encomendar Vacinas</a></li>
+			</ul>
+		</nav>
+		<main>
+			<div class="content-wrapper">
+				<h3>Marcação de vacina para o Sars-Covid19</h3>
+				<ul id="marcação">
+					<p>Escolha a sua preferencia de vacina:</p>
+					<select id="tipoVacina">
+						<option value="Pfizer">Pfizer</option>
+						<option value="AstraZeneca">AstraZeneca</option>
+						<option value="Moderna">Moderna</option>
+
+					</select>
+
+					<p>Data para marcaçao da 1ª dose:</p>
+					<div class="tooltip"><input class="tooltip" id="date" type="date">
+						<span class="tooltiptext">A consulta para a toma da vacina só pode
+						ser marcada num prazo maximo de 1 ano</span>
+					</div>
+					<div><a class="InvalidDate"> ⚠ Insira uma data válida</a></div>
+
+				</ul>
+
+				<ul id="botoes">
+					<button id="Confirmar" onclick="confirmarConsulta()"><a>Confirmar</a></button>
+					<button id="Cancelar"><a href="../registar/index.html">Cancelar</a></button>
+					<div><a class="message"> ✅ Consulta marcada com sucesso</a></div>
+				</ul>
+
+			</div>
+			<!-- The Modal Logout-->
+			<div id="ModalLogout" class="modal-logout">
+				<!-- Modal content -->
+				<div class="modal-content-logout">
+					<div class="modal-logout-content2">
+						<p> Tem a certeza que deseja terminar sessão?</p>
+						<button id="confirmarModal" class="confirmar" onclick="logout()">Sim</button>
+						<button id="cancelarModal" class="cancelar" onclick="closeModalLogout()">Não</button>
+					</div>
+				</div>
+			</div>
+			<!-- The Modal Settings-->
+			<div id="ModalSettings" class="modal-settings">
+				<!-- Modal content -->
+				<div class="modal-content-settings">
+					<div class="modal-settings-content2">
+						<div style="display: flex; justify-content: space-between">
+							<h3 style="margin-top: 4px ;">Definições</h3>
+							<span class="closeSettings" >&times;</span>
+						</div>
+						<div style="display: flex">
+							<p>Ativar notificações</p>
+							<input type="checkbox" style="margin-top: 27px">
+						</div>
+						<div>
+
+							<button class="guardarModal">Guardar</button>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+	</div>
+
+	<footer>
+
+	</footer>
+</div>
+<script src="marcacao.js"></script>
+</body>
+
+</html>

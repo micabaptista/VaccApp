@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en-US" xmlns="http://www.w3.org/1999/html">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>VaccApp</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap">
+	<link rel="shortcut icon" type="image/jpg" href="../../icons/logo.png"/>
+	<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"/>
+	<link
+			href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+			rel="stylesheet"/>
+</head>
+
+<body>
+<div id="app">
+	<header>
+		<div class="header-item">
+			<img class="logo" alt="logo" src="../../icons/logo.svg"/>
+			<span class="title">VaccApp</span>
+		</div>
+
+		<div class="header-item header-item--even">
+			<img class="settings" alt="settings" src="../../icons/settings.svg"/>
+			<img class="logout" alt="logout" src="../../icons/logout.svg"/>
+		</div>
+
+	</header>
+
+	<div class="main-content">
+		<nav>
+			<ul>
+				<!-- Alterar o active consoante a pagina -->
+				<li class="nav-option active"><a href="../agenda/index.html">Agenda</a></li>
+				<li class="nav-option"><a href="../consultar/index.html">Consultar Município</a></li>
+				<li class="nav-option"><a href="../registar/index.html">Marcar Consulta</a></li>
+				<li class="nav-option"><a href="../encomendar/index.html">Encomendar Vacinas</a></li>
+			</ul>
+		</nav>
+		<main>
+			<div class="content-wrapper">
+				<h2 id="subtitulo">Escolha um dia para consutar as marcações de vacina</h2>
+				<div class="container">
+					<div class="calendar">
+						<div class="month">
+							<i class="fas fa-angle-left prev"></i>
+							<div class="date">
+								<h1></h1>
+								<p></p>
+							</div>
+							<i class="fas fa-angle-right next"></i>
+						</div>
+						<div class="weekdays">
+							<div>D</div>
+							<div>S</div>
+							<div>T</div>
+							<div>Q</div>
+							<div>Q</div>
+							<div>S</div>
+							<div>S</div>
+						</div>
+						<div class="days"></div>
+					</div>
+				</div>
+			</div>
+			<!-- The Modal Logout-->
+			<div id="ModalLogout" class="modal-logout">
+				<!-- Modal content -->
+				<div class="modal-content-logout">
+					<div class="modal-logout-content2">
+						<p> Tem a certeza que deseja terminar sessão?</p>
+						<button id="confirmarModal" class="confirmar" onclick="logout()">Sim</button>
+						<button id="cancelarModal" class="cancelar" onclick="closeModalLogout()">Não</button>
+					</div>
+				</div>
+			</div>
+			<!-- The Modal Settings-->
+			<div id="ModalSettings" class="modal-settings">
+				<!-- Modal content -->
+				<div class="modal-content-settings">
+					<div class="modal-settings-content2">
+						<div style="display: flex; justify-content: space-between; font-size: 24px;
+padding-bottom: 40px;">
+							<h3 style="margin-top: 4px;">Definições</h3>
+							<span class="closeSettings" >&times;</span>
+						</div>
+						<div style="display: flex; padding-bottom: 12px">
+							<p>Ativar notificações</p>
+							<input type="checkbox" style="margin-top: 27px">
+						</div>
+						<div>
+
+							<button class="guardarModal">Guardar</button>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+	</div>
+</div>
+
+<script src="top-bar.js"></script>
+<script src="../../js/log-in.js"></script>
+
+</body>
+
+</html>
